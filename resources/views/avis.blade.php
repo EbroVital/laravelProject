@@ -31,7 +31,7 @@
         <form method="post" action="">
             <!-- 2 column grid layout with text inputs for the first and last names -->
             @csrf
-            <h1 class="fw-bold mb-3"> Avis de bureau N° {{ $numAvis }}</h1>
+            <h1 class="fw-bold mb-3"> Avis de bureau : N° {{ $numAvis }}</h1>
             <div class="row mb-4">
               <div class="col">
                 <div data-mdb-input-init class="form-outline">

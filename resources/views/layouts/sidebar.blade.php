@@ -35,7 +35,14 @@
         </a>
       </li>
     <hr class="sidebar-divider">
-    
+    <div class="sidebar-heading">
+        les Elus
+    </div>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('Elu.index') }}">
+          <span>les Elus</span>
+        </a>
+    </li>
 
 
 

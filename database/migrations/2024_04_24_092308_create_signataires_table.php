@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('avis');
             $table->string('signature');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

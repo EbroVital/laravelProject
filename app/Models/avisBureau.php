@@ -19,7 +19,13 @@ class avisBureau extends Model
         'montant',
         'libelle',
         'numero',
-        'loi'
+        'annee_budgetaire_id',
+        'entreprise_id',
+        'section_id',
+        'arrete_id',
+        'article_id',
+        'signataire_id',
+        'loi_id'
     ];
 
 

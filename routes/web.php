@@ -2,11 +2,11 @@
 
 use App\Http\Controllers\avisController;
 use App\Http\Controllers\deliberationController;
-use App\Http\Controllers\DeliberationController as ControllersDeliberationController;
 use App\Http\Controllers\entrepriseController;
-use App\Http\Controllers\EntrepriseController as ControllersEntrepriseController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\signataireController;
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Expr\FuncCall;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +62,11 @@ Route::prefix('/entreprise')->name('entreprise.')->controller(EntrepriseControll
     Route::put('/restore/{id}', 'restore')->name('restore');
 });
 
+Route::resource('Elu', signataireController::class);
+Route::prefix('Elu')->name('Elu.')->controller(signataireController::class)->group( function(){
+    Route::get('/','index')->name('index');
+    Route::post('/', 'store');
+});
 
 require __DIR__.'/auth.php';
 

@@ -32,7 +32,7 @@
             <!-- 2 column grid layout with text inputs for the first and last names -->
             @csrf
 
-            <h1 class="fw-bold mb-3"> Délibération N° {{ $numDelib }}</h1>
+            <h1 class="fw-bold mb-3"> Délibération : N° {{ $numDelib }}</h1>
             <div data-mdb-input-init class="form-outline mb-4">
                 <label class="form-label fw-bold" for="date">Date :</label>
                 <input type="date" name="dateDelib" id="date" class="form-control @error('dateDelib') is-invalid @enderror" >
