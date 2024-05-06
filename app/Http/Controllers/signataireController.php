@@ -13,7 +13,7 @@ class signataireController extends Controller
      */
     public function index()
     {
-        $elus = signataire::withTrashed()->oldest()->get();
+        $elus = signataire::all();
         return view('elu', compact('elus'));
     }
 
